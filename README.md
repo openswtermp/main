@@ -32,11 +32,11 @@ NumPy - 배열과 수학적 계산을 사용하므로 NumPy 라이브러리를 �
 
     pip install numpy
 
-tkinter - GUI구현을 위해 tkinter 라이브러리를 사용하였습니다, 별도 설치는 필요하지 않습니다.
-
 Pillow - Image 및 ImageTk를 사용하여 이미지를 로드하고 Tkinter와 호환 가능하도록 변환하기 위해 pillow 라이브러리를 사용하였습니다.
 
     pip install pillow
+
+tkinter - GUI구현을 위해 tkinter 라이브러리를 사용하였습니다, 별도 설치는 필요하지 않습니다.
 
 ## 실행방법
 
