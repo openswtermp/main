@@ -1,5 +1,6 @@
 import tkinter as tk
 from PIL import Image, ImageTk
+from annoying_fruits import orange
 
 def start_fruit_processing(fruit_name):
     if fruit_name == "Orange":
