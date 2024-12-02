@@ -1,4 +1,4 @@
-# Annoying Orange with OpenCV
+# Annoying Fruits with OpenCV
 ### GCU OpenSourceSW 2024
 
 사용자의 얼굴을 어노잉 오렌지처럼 과일에 합성해주는 프로그램입니다.
@@ -48,3 +48,10 @@ NumPy - 배열과 수학적 계산을 사용하므로 NumPy 라이브러리를 �
 
 ## 참고문헌
 https://www.youtube.com/watch?v=9VYUXchrMcM
+
+## contributers
+* 202135587 최재경
+* 202434643 윤석원
+* 202434863 현태건
+* 202434601 김지후
+* 202434816 이준서
