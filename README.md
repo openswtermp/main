@@ -3,7 +3,11 @@
 
 사용자의 얼굴을 어노잉 오렌지처럼 과일에 합성해주는 프로그램입니다.
 
-dlib패키지를 통해 사용자의 캠을 통해 유저의 실제 표정을 실시간으로 합성해줍니다.
+dlib패키지를 통해 사용자의 캠을 통해 유저의 얼굴을 감지하고
+
+dlib.shape_predictor()를 통해 얼굴의 좌표(눈, 코, 입 등 68개의 좌표)를 추출합니다.
+
+## 예시화면
 
 <img src="https://github.com/user-attachments/assets/a1b18d2d-7504-4d05-9741-61ce4b50a27e" alt="Annoying Orange" width="300">
 
