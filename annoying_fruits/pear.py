@@ -4,7 +4,7 @@ from imutils import face_utils, resize
 import numpy as np
 
 #배 이미지 불러오기 및 크기 조정
-pear_img = cv2.imread('assets/pear_icon.jpg')
+pear_img = cv2.imread('assets/pear_icon.png')
 pear_img = cv2.resize(pear_img, (512, 512))
 
 # dlib 얼굴 감지기와 랜드마크 예측기 로드
