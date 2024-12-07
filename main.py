@@ -1,6 +1,6 @@
 import tkinter as tk
 from PIL import Image, ImageTk
-from annoying_fruits import orange,pear,watermelon
+from annoying_fruits import orange,pear,watermelon,apple
 
 def start_fruit_processing(fruit_name):
     if fruit_name == "Orange":
@@ -9,6 +9,8 @@ def start_fruit_processing(fruit_name):
         pear.process()
     if fruit_name == "Watermelon":
         watermelon.process()
+    if fruit_name == "Apple":
+        apple.process()
 
 def create_fruit_button(grid_row, grid_column, image_path, text, command):
     # 이미지 로드 및 변환
@@ -39,6 +41,7 @@ tk.Label(root, text="Select a Fruit!", font=("Arial", 18)).grid(row=0, column=0,
 create_fruit_button(1, 0, "assets/orange_icon.png", "Orange", lambda: start_fruit_processing("Orange"))
 create_fruit_button(1, 1, "assets/watermelon_icon.png", "Watermelon", lambda: start_fruit_processing("Watermelon"))
 create_fruit_button(3, 0, "assets/pear_icon.png", "Pear", lambda: start_fruit_processing("Pear"))
+create_fruit_button(3, 1, "assets/pear_icon.png", "Pear", lambda: start_fruit_processing("Apple"))
 
 # Quit버튼 추가
 tk.Button(root, text=" Quit ", command=root.destroy, font=("Arial", 14)).grid(row=5, column=0, columnspan=2, pady=20)
