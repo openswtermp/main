@@ -1,10 +1,12 @@
 import tkinter as tk
 from PIL import Image, ImageTk
-from annoying_fruits import orange
+from annoying_fruits import orange,watermelon
 
 def start_fruit_processing(fruit_name):
     if fruit_name == "Orange":
         orange.process()
+    if fruit_name == 'Watermelon':
+        watermelon.process()
 
 def create_fruit_button(grid_row, grid_column, image_path, text, command):
     # 이미지 로드 및 변환
