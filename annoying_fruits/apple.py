@@ -4,7 +4,7 @@ from imutils import face_utils, resize
 import numpy as np
 
 # 사과 이미지와 dlib 랜드마크 모델 경로 설정
-apple_img_path = 'assets/Apple.jpg'
+apple_img_path = 'assets/apple.jpg'
 landmark_model_path = 'shape_predictor_68_face_landmarks.dat'
 
 # 사과 이미지 불러오기 및 크기 조정
