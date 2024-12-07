@@ -40,10 +40,11 @@ tk.Label(root, text="Select a Fruit!", font=("Arial", 18)).grid(row=0, column=0,
 # 과일 버튼 추가
 create_fruit_button(1, 0, "assets/orange_icon.png", "Orange", lambda: start_fruit_processing("Orange"))
 create_fruit_button(1, 1, "assets/watermelon_icon.png", "Watermelon", lambda: start_fruit_processing("Watermelon"))
-create_fruit_button(3, 0, "assets/pear_icon.png", "Pear", lambda: start_fruit_processing("Pear"))
-create_fruit_button(3, 1, "assets/pear_icon.png", "Pear", lambda: start_fruit_processing("Apple"))
+create_fruit_button(3, 0, "assets/pear_icon.jpg", "Pear", lambda: start_fruit_processing("Pear"))
+create_fruit_button(3, 1, "assets/apple.jpg", "Apple", lambda: start_fruit_processing("Apple"))
 
 # Quit버튼 추가
 tk.Button(root, text=" Quit ", command=root.destroy, font=("Arial", 14)).grid(row=5, column=0, columnspan=2, pady=20)
 
 root.mainloop()
+
