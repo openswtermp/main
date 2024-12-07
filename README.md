@@ -9,7 +9,9 @@ dlib.shape_predictor()를 통해 얼굴의 좌표(눈, 코, 입 등 68개의 좌
 
 ## 예시화면
 
-<img src="https://github.com/user-attachments/assets/c1d3ebb1-c087-431f-9c33-67770a613b17" alt="Annoying Orange" width="300">
+
+<img src="https://github.com/user-attachments/assets/a1b18d2d-7504-4d05-9741-61ce4b50a27e" alt="Annoying Orange" width="300">
+
 
 ## 사용 패키지 및 모듈
 OpenCV - 사용자의 얼굴을 식별하기 위해 openCV와 opencv-contrib-python 패키지를 사용하였습니다.
