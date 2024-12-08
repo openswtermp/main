@@ -4,10 +4,10 @@ from imutils import face_utils, resize
 import numpy as np
 import os
 
-def process(orange_img_path='assets/pear_icon.jpg', landmark_model_path='shape_predictor_68_face_landmarks.dat'):
+def process(pear_img_path='assets/pear_icon.jpg', landmark_model_path='shape_predictor_68_face_landmarks.dat'):
     # 이미지 불러오기 및 크기 조정
-    orange_img = cv2.imread(orange_img_path)
-    orange_img = cv2.resize(orange_img, (512, 512))
+    pear_img = cv2.imread(pear_img_path)
+    pear_img = cv2.resize(pear_img, (512, 512))
 
     # dlib 얼굴 감지기와 랜드마크 예측기 로드
     detector = dlib.get_frontal_face_detector()
@@ -29,8 +29,8 @@ def process(orange_img_path='assets/pear_icon.jpg', landmark_model_path='shape_p
         # 2. 얼굴 감지
         faces = detector(gray_img)
 
-        # 오렌지 이미지의 복사본 생성
-        result = orange_img.copy()
+        # 배 이미지의 복사본 생성
+        result = pear_img.copy()
 
         if len(faces) > 0:  # 얼굴이 감지되었다면,
             face = faces[0]  # 첫 번째 얼굴만 사용
