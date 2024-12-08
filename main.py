@@ -1,6 +1,6 @@
 import tkinter as tk
 from PIL import Image, ImageTk
-from annoying_fruits import orange,pear,watermelon,apple
+from annoying_fruits import orange,pear,watermelon,apple,cherry
 
 def start_fruit_processing(fruit_name):
     if fruit_name == "Orange":
@@ -11,6 +11,8 @@ def start_fruit_processing(fruit_name):
         watermelon.process()
     if fruit_name == "Apple":
         apple.process()
+    if fruit_name == "Cherry":
+        cherry.process()    
 
 def create_fruit_button(grid_row, grid_column, image_path, text, command):
     # 이미지 로드 및 변환
@@ -32,7 +34,7 @@ def create_fruit_button(grid_row, grid_column, image_path, text, command):
 root = tk.Tk()
 root.title("Annoying fruits")
 
-root.geometry("250x450")  # 창 크기 조정
+root.geometry("250x600")  # 창 크기 조정
 
 # UI 제목
 tk.Label(root, text="Select a Fruit!", font=("Arial", 18)).grid(row=0, column=0, columnspan=2, pady=20)
@@ -42,9 +44,10 @@ create_fruit_button(1, 0, "assets/orange_icon.png", "Orange", lambda: start_frui
 create_fruit_button(1, 1, "assets/watermelon_icon.png", "Watermelon", lambda: start_fruit_processing("Watermelon"))
 create_fruit_button(3, 0, "assets/pear_icon.jpg", "Pear", lambda: start_fruit_processing("Pear"))
 create_fruit_button(3, 1, "assets/apple.jpg", "Apple", lambda: start_fruit_processing("Apple"))
+create_fruit_button(5, 0, "assets/cherry.jpg", "Cherry", lambda: start_fruit_processing("Cherry"))
 
 # Quit버튼 추가
-tk.Button(root, text=" Quit ", command=root.destroy, font=("Arial", 14)).grid(row=5, column=0, columnspan=2, pady=20)
+tk.Button(root, text=" Quit ", command=root.destroy, font=("Arial", 14)).grid(row=7, column=0, columnspan=2, pady=20)
 
 root.mainloop()
 

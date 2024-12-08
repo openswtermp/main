@@ -4,8 +4,8 @@ import numpy as np
 from imutils import face_utils
 import os
 
-def process(cherry_img_path='C:/Users/royal/Desktop/cpfl.jpg', 
-            landmark_model_path='C:/Users/royal/Desktop/shape_predictor_68_face_landmarks.dat'):
+def process(cherry_img_path='assets/cherry.jpg', #상대경로 변경 
+            landmark_model_path='shape_predictor_68_face_landmarks.dat'):
     # 1. 체리 이미지 로드
     if not os.path.exists(cherry_img_path):
         print(f"Error: Cherry image not found at {cherry_img_path}")
@@ -117,4 +117,4 @@ def process(cherry_img_path='C:/Users/royal/Desktop/cpfl.jpg',
 
 
 # 실행
-process()
+##process()
