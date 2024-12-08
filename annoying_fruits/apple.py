@@ -2,6 +2,7 @@ import cv2
 import dlib
 from imutils import face_utils, resize
 import numpy as np
+import os
 
 
 def process(apple_img_path = 'assets/apple.jpg'
@@ -78,6 +79,10 @@ def process(apple_img_path = 'assets/apple.jpg'
         # 'q' 키를 누르면 루프 종료
         if cv2.waitKey(1) == ord('q'):
             break
+        elif cv2.waitKey(1) == ord('w'): # 'w' 키를 눌러 스크린샷 저장
+            filename = os.path.join('result', 'screenshot_{}.png'.format(cv2.getTickCount()))
+            cv2.imwrite(filename, result)
+            print(f"Screenshot saved: {filename}")
 
     # 카메라 및 모든 창 종료
     cap.release()

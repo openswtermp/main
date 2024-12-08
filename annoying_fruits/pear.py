@@ -2,9 +2,10 @@ import cv2
 import dlib
 from imutils import face_utils, resize
 import numpy as np
+import os
 
 def process(orange_img_path='assets/pear_icon.jpg', landmark_model_path='shape_predictor_68_face_landmarks.dat'):
-    # 오렌지 이미지 불러오기 및 크기 조정
+    # 이미지 불러오기 및 크기 조정
     orange_img = cv2.imread(orange_img_path)
     orange_img = cv2.resize(orange_img, (512, 512))
 
@@ -75,6 +76,10 @@ def process(orange_img_path='assets/pear_icon.jpg', landmark_model_path='shape_p
         # 'q' 키를 누르면 루프 종료
         if cv2.waitKey(1) == ord('q'):
             break
+        elif cv2.waitKey(1) == ord('w'): # 'w' 키를 눌러 스크린샷 저장
+            filename = os.path.join('result', 'screenshot_{}.png'.format(cv2.getTickCount()))
+            cv2.imwrite(filename, result)
+            print(f"Screenshot saved: {filename}")
 
     # 카메라 및 모든 창 종료
     cap.release()
